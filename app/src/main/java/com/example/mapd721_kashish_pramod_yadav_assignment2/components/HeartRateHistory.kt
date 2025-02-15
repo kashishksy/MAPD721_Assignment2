@@ -34,7 +34,7 @@ fun HeartRateHistory(itemsList: List<HeartRateRecord>) {
             .padding(16.dp)
             .height(200.dp)
             .border(2.dp, Color.White, shape = RoundedCornerShape(12.dp))
-            //.background(Color(0xFFFFFF), shape = RoundedCornerShape(16.dp)) // grey background with rounded corners
+
     ) {
         // Column to display multiple heart rate records with scroll functionality
         Column(
