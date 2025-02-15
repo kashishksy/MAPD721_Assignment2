@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MAPD721_kashish_pramod_yadav_assignment2" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
