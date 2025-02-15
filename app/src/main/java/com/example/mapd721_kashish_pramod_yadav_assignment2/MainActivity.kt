@@ -72,11 +72,6 @@ fun DisplayHealthData(modifier: Modifier = Modifier, context: Context) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-//            .background(
-//                brush = Brush.verticalGradient(
-//                    colors = listOf(Color(0xFF000428), Color(0xFF004e92))
-//                )
-//            )
             .padding(16.dp),
         contentAlignment = Alignment.Center
     ) {
@@ -134,8 +129,8 @@ fun DisplayHealthData(modifier: Modifier = Modifier, context: Context) {
                     },
                     modifier = Modifier.fillMaxWidth().border(2.dp, Color.White, shape = RoundedCornerShape(12.dp)), // White border,
                     colors = ButtonDefaults.buttonColors(
-                        contentColor = Color.White, // White text
-                        containerColor = Color.Transparent // Transparent background
+                        contentColor = Color.White, // White texts
+                        containerColor = Color.Transparent // Removing background
                     ),
                     shape = RoundedCornerShape(12.dp)
                 ) {
@@ -173,7 +168,8 @@ fun DisplayHealthData(modifier: Modifier = Modifier, context: Context) {
                             ).show()
                         }
                     },
-                    modifier = Modifier.fillMaxWidth().border(2.dp, Color.White, shape = RoundedCornerShape(12.dp)), // White border,
+                    // White border here
+                    modifier = Modifier.fillMaxWidth().border(2.dp, Color.White, shape = RoundedCornerShape(12.dp)),
                     colors = ButtonDefaults.buttonColors(
                         contentColor = Color.White,
                         containerColor = Color(0xFF008080)
@@ -206,13 +202,13 @@ fun DisplayHealthData(modifier: Modifier = Modifier, context: Context) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(10.dp)
-                    //.background(Color(0xFFFFFFF), shape = RoundedCornerShape(16.dp))
+
             ) {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .border(2.dp, Color.White, shape = RoundedCornerShape(12.dp))
-                        .padding(16.dp), // White border,
+                        .border(2.dp, Color.White, shape = RoundedCornerShape(12.dp)) // White border,
+                        .padding(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
